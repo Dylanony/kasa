@@ -1,10 +1,12 @@
-function footer() {
+import "./footer.css"
+
+function Footer() {
     return (
         <footer>
-            <div class="logo-white">
-                <img src="" alt="logo kasa en blanc" />
+            <div className="logo-white">
+                <img src="/logo_reverse.png" alt="logo kasa en blanc" />
             </div>
-            <div class="copyright">
+            <div className="copyright">
                 <span>
                     © 2020 Kasa. All rights reserved
                 </span>
@@ -13,4 +15,4 @@ function footer() {
     ) 
 }
   
-export default footer
+export default Footer

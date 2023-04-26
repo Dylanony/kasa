@@ -1,0 +1,27 @@
+.main {
+    margin: auto;
+    padding-top: 39px;
+    max-width: 1070px;
+    height: 52.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > .col {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1239px) {
+    .main {
+        width: unset;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        min-height: 58.4vh;
+        max-width: 335px;
+    }
+}

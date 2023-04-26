@@ -1,21 +1,33 @@
-function header() {
+import "./header.css"
+import { Link } from 'react-router-dom'
+
+const getCurrentPath = () => {
+    const {pathname} = window.location; 
+    return pathname;
+}
+
+function Header() {
     return (
         <header>
-            <div class="logo-nav">
-                <div class="logo">
-                    <img src="" alt="logo kasa" />
+            <div className="logo-nav">
+                <div className="logo">
+                    <img src="/logo.png" alt="logo kasa" />
                 </div>
                 <nav>
                     <ul>
                         <li>
-                            <a href="">
-                                Accueil
-                            </a>
+                            <Link to="/" className={`welcome ${getCurrentPath() === "/"?'active':''}`} >
+                                <span>
+                                    Accueil
+                                </span>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
-                                A propos
-                            </a>
+                            <Link to="/propos" className={`about ${getCurrentPath() === "/propos"?'active':''}`} >
+                                <span>
+                                    A Propos
+                                </span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -24,4 +36,4 @@ function header() {
     ) 
 }
   
-export default header
+export default Header

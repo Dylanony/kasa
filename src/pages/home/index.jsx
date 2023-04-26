@@ -1,24 +1,28 @@
-import banner from "../../assets/banner_home.png"
-import card from "../../component/card"
+import "./home.css"
+import {data} from "../../data/data"
+import Header from "../../component/header"
+import Banner from "../../component/banner/banner"
+import Card from "../../component/card"
+import Footer from "../../component/footer"
 
 function Home() {
     return (
         <main>
-            <div class="banner">
-                <h1>
-                    Chez vous, partout et ailleurs
-                </h1>
-                <div class="image-banner">
-                    <img src={banner} alt="paysage maritime" />
-                </div>
+            <Header/>
+            <Banner/>
+            <div className="gallery">
+                {
+                    data.map((logement, i) => 
+                        <Card 
+                            key={i}
+                            title = {logement.title}
+                            cover = {logement.cover}
+                            id = {logement.id}
+                        />
+                    )
+                }    
             </div>
-            <div class="gallery">
-                <ul>
-                    <li>
-                        {card}
-                    </li>
-                </ul>
-            </div>
+            <Footer/>
         </main>
     ) 
 }

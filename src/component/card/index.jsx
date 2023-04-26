@@ -1,16 +1,15 @@
-import cardStyle from "card.css"
+import  "./card.css"
+import { Link } from 'react-router-dom'
 
-function card() {
+function Card({title, cover, id}) {
     return (
-        <a href="" class="card">
-            <div class="picture">
-                <img src="" alt="" />
-            </div>
-            <span class="title">
-
+        <Link to={"logement/" + id} className="card">
+            <span className="title">
+                {title}
             </span>
-        </a>
+            <img src={cover} />
+        </Link>
     ) 
 }
   
-export default card
+export default Card

@@ -1,13 +1,33 @@
 
 
 .card {
-    width: 340px;
+    position: relative;
+    width: 31%;
     height: 340px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.card > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.dark-gradient {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
 }
 
-.picture {
+.red-img {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -19,15 +39,18 @@
 }
 
 .title {
-    font-family: 'Montserrat';
+    width: 92%;
+    height: 60px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px #000;
+
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
 
     position: absolute;
-    left: 5.88%;
-    right: 5.88%;
     top: 78.82%;
     bottom: 5.88%;
 
@@ -35,4 +58,10 @@
     align-items: flex-end;
 
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        width: 335px;
+    }
 }

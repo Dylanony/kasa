@@ -1,0 +1,40 @@
+.red-star > span {
+    margin: 0 10px;
+}
+
+.star {
+    width: 30px;
+}
+
+@media screen and (max-width: 1062px) {
+    .red-star {
+        width: 177px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .red-star > span {
+        margin: unset;
+    }
+
+    .star {
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .red-star {
+        width: unset;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .red-star > span {
+        margin: unset;
+    }
+
+    .star {
+        width: 22px;
+    }
+}

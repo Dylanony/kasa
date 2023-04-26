@@ -1,0 +1,78 @@
+h1, p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenant {
+    width: 100%;
+    height: 72.6vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.code-error {
+    margin-bottom: 80px;
+}
+
+.back {
+    margin-top: 110px;
+}
+
+.code-error, .msg, .back {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.code-error > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 500px;
+    line-height: 411px;
+
+    display: flex;
+    align-items: center;
+    margin: 0px;
+
+    color: #FF6060;
+}
+
+.msg > p {
+    color: #FF6060;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.back > a {
+    color: #FF6060;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .code-error {
+        margin-bottom: unset;
+    }
+
+    .code-error > h1 {
+        font-size: 146px;
+        line-height: unset;
+    }
+
+    .msg {
+        width: 253px;
+        margin: 0 auto;
+    }
+
+    .msg > p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+
+    .back > a {
+        font-weight: 500;
+    }
+}
