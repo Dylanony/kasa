@@ -47,8 +47,52 @@ h1, p, a {
 .back > a {
     color: #FF6060;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1030px) {
+    .code-error {
+        margin-bottom: unset;
+    }
+
+    .code-error > h1 {
+        font-size: 360px;
+        line-height: unset;
+    }
+
+    .msg {
+        width: 660px;
+        margin: 0 auto;
+    }
+
+    .msg > p {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .code-error {
+        margin-bottom: unset;
+    }
+
+    .code-error > h1 {
+        font-size: 146px;
+        line-height: unset;
+    }
+
+    .msg {
+        width: 253px;
+        margin: 0 auto;
+    }
+
+    .msg > p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 35px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -70,9 +114,5 @@ h1, p, a {
         font-size: 20px;
         font-weight: 500;
         line-height: 35px;
-    }
-
-    .back > a {
-        font-weight: 500;
     }
 }
