@@ -92,4 +92,8 @@
     .next > img {
         width: 25px;
     }
+
+    .count {
+        display: none;
+    }
 }

@@ -1,6 +1,6 @@
 import "./collaps.scss"
 
-function Collaps({title, description, _id, i}) {
+function Collaps({title, description, _id}) {
     return (
         <div className="col">
             <div className="tabs">

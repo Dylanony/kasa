@@ -52,7 +52,7 @@ input {
       content: "\276F";
       width: 1em;
       height: 1em;
-      transform: rotate(-90deg);
+      transform: rotate(90deg);
       text-align: center;
       transition: all .35s;
     }
@@ -91,7 +91,7 @@ input:checked {
   + .tab-label {
     background: darken($red, 10%);
     &::after {
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
     }
   }
   ~ .tab-content {
